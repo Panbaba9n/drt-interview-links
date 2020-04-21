@@ -1,0 +1,5 @@
+<app-course-list
+  [courses]="courses$ | async"
+  (editCourseEvent)="editCourse($event)"
+  (deleteCourseEvent)="deleteCourse($event)"
+></app-course-list>

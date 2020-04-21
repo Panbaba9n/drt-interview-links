@@ -1,0 +1,9 @@
+<th scope="row">{{ course.id }}</th>
+<td>{{ course.title }}</td>
+<td>{{ course.duration }}</td>
+<td>{{ course["duration-unit"] }}</td>
+<td>{{ course.description }}</td>
+<td>
+  <button type="button" class="btn btn-primary" (click)="sendEditCourseEvent(course)">Edit</button>
+  <button type="button" class="btn btn-danger" (click)="sendDeleteCourseEvent(course.id)">Delete</button>
+</td>

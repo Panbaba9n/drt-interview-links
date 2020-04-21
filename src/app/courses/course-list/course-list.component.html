@@ -1,0 +1,23 @@
+<div class="table-responsive">
+  <table class="table">
+    <thead class="thead-dark">
+      <tr>
+        <th scope="col">#</th>
+        <th scope="col">Title</th>
+        <th scope="col">Duration</th>
+        <th scope="col">Duration Unit</th>
+        <th scope="col">Description</th>
+        <th scope="col"></th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr
+        appCourse
+        [course]="course"
+        (editCourseEvent)="sendEditCourseEvent($event)"
+        (deleteCourseEvent)="sendDeleteCourseEvent($event)"
+        *ngFor="let course of courses"
+      ></tr>
+    </tbody>
+  </table>
+</div>
